@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mood App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: 'Times New Roman', Times, serif;">MoodEase</h1>
+        <label for="moodSelect" style="font-size: 18px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" >Select your mood:</label>
+        
+        <select id="moodSelect" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <option value="Default" >Default</option>
+            <option value="Neutral">Neutral</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="anxious">Anxious</option>
+            <option value="worried">Worried/Frustrated</option>
+            <option value="lonely">Lonely</option>
+            <option value="Angry">Angry</option>
+            
+        </select>
+        &nbsp &nbsp<button onclick="generateParagraph()" style="border-radius: 40px; border-style: none; background-color: #5b3a53; color: white; font-size: 13px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Click Me!</button>
+        <div id="resultParagraph" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <p id="paragraph"></p>
+            <img id="moodImage" src="" alt="Mood Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
